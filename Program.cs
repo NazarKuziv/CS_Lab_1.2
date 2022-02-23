@@ -26,7 +26,7 @@ namespace CS_Lab_1._2
             Console.Write("c = ");
             c = Convert.ToDouble(Console.ReadLine());
 
-            // спосіб 1: розгалуження в скороченій формі
+          
             if (c < 0 && b != 0)
                 F = a * Math.Pow(x, 2) + Math.Pow(b, 2) * x;
             if (c > 0 && b == 0)
@@ -34,18 +34,8 @@ namespace CS_Lab_1._2
             if (!(c < 0 && b != 0) && !(c > 0 && b == 0))
                 F = x / c;
 
-            Console.WriteLine($"F1 = {F}");
+            Console.WriteLine($"F = {F}");
 
-            // спосіб 2: розгалуження в повній формі
-            if (c < 0 && b != 0)
-                F = a * Math.Pow(x, 2) + Math.Pow(b, 2) * x;
-            else
-                if (c > 0 && b == 0)
-                F = (x + a) / (x + c);
-            else
-                F = x / c;
-
-            Console.WriteLine($"F2 = {F}");
 
             Console.ReadKey();
 
